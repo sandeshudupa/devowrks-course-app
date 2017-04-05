@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: devowrks-course-app
+  host: devowrks-course-app
+  disk_quota: 1024M
+  services:
+  - devowrks-course-app-cloudantNoSQLDB
+  - Language Translator-p7
+  - Conversation-21
+  - Compose for MongoDB-7u
