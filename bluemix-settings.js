@@ -16,6 +16,7 @@
 
 var path = require("path");
 var when = require("when");
+var fs = require("fs");
 
 var cfenv = require("cfenv");
 var appEnv = cfenv.getAppEnv();
@@ -49,7 +50,10 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: { },
+    functionGlobalContext: {
+    	fs: fs,
+    	path: path
+    },
 
     storageModule: require("./couchstorage")
 }
