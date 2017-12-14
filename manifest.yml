@@ -7,7 +7,5 @@ applications:
   host: devowrks-course-app
   disk_quota: 1024M
   services:
-  - devowrks-course-app-cloudantNoSQLDB
   - Language Translator-p7
   - Conversation-21
-  - Compose for MongoDB-7u
